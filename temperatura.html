@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Conversor de temperatura</title>
+</head>
+
+<body>
+    <body style="background-color:powderblue;">
+    <h1>Conversor de temperatura</h1>
+    <form class="temp" name="convert">
+        
+        <font> Celsius: </font>
+        <input type="number" name="inputcelsius" size="7" onchange="convertTemp('cparaf')">
+        <font> Fahrenheit: </font>
+        <input type="number" name="inputfahrenheint" size="7" onchange="convertTemp('fparac')">
+        <font> Kelvin: </font>
+        <input type="number" name="inputkelvin" size="7" onchange="convertTemp('kparaf')">
+
+        <br/><br/>
+        
+        <input id="limpar" type="button" value="Limpar Valores" onclick="clearAll();">
+
+    </form>
+
+    <div class="botoes">
+        <form method="get" action="index.html">
+            <button type="submit">Página principal</button>
+        </form>
+    </div>
+</body>
+
+<script type="text/javascript" src="js/temperatura.js"></script>
+
+</html>
